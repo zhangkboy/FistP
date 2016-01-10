@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE257E1F1C42647800A990B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE257E1C1C42647800A990B6 /* AppDelegate.m */; };
 		AE257E201C42647800A990B6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE257E1E1C42647800A990B6 /* HomeViewController.m */; };
+		AE257E261C42973200A990B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE257E251C42973200A990B6 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		AE257E1C1C42647800A990B6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE257E1D1C42647800A990B6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		AE257E1E1C42647800A990B6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AE257E251C42973200A990B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE257E261C42973200A990B6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +48,7 @@
 		AE257DA61C3F914400A990B6 = {
 			isa = PBXGroup;
 			children = (
+				AE257E251C42973200A990B6 /* AVFoundation.framework */,
 				AE257E1A1C42647800A990B6 /* Home */,
 				AE257DB01C3F914400A990B6 /* Products */,
 			);
