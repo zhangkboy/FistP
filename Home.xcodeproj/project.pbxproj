@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE257DB31C3F914400A990B6 /* Home.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE257DB21C3F914400A990B6 /* Home.h */; };
-		AE257DB51C3F914400A990B6 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = AE257DB41C3F914400A990B6 /* Home.m */; };
+		AE257E1F1C42647800A990B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE257E1C1C42647800A990B6 /* AppDelegate.m */; };
+		AE257E201C42647800A990B6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE257E1E1C42647800A990B6 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				AE257DB31C3F914400A990B6 /* Home.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +25,10 @@
 
 /* Begin PBXFileReference section */
 		AE257DAF1C3F914400A990B6 /* libHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHome.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE257DB21C3F914400A990B6 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		AE257DB41C3F914400A990B6 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		AE257E1B1C42647800A990B6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE257E1C1C42647800A990B6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE257E1D1C42647800A990B6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		AE257E1E1C42647800A990B6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +45,7 @@
 		AE257DA61C3F914400A990B6 = {
 			isa = PBXGroup;
 			children = (
-				AE257DB11C3F914400A990B6 /* Home */,
+				AE257E1A1C42647800A990B6 /* Home */,
 				AE257DB01C3F914400A990B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,11 +58,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE257DB11C3F914400A990B6 /* Home */ = {
+		AE257E1A1C42647800A990B6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				AE257DB21C3F914400A990B6 /* Home.h */,
-				AE257DB41C3F914400A990B6 /* Home.m */,
+				AE257E1B1C42647800A990B6 /* AppDelegate.h */,
+				AE257E1C1C42647800A990B6 /* AppDelegate.m */,
+				AE257E1D1C42647800A990B6 /* HomeViewController.h */,
+				AE257E1E1C42647800A990B6 /* HomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -122,7 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE257DB51C3F914400A990B6 /* Home.m in Sources */,
+				AE257E1F1C42647800A990B6 /* AppDelegate.m in Sources */,
+				AE257E201C42647800A990B6 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,18 +216,24 @@
 		AE257DB91C3F914400A990B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "../**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../**";
 			};
 			name = Debug;
 		};
 		AE257DBA1C3F914400A990B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "../**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../**";
 			};
 			name = Release;
 		};
@@ -246,6 +256,7 @@
 				AE257DBA1C3F914400A990B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
